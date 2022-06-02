@@ -129,6 +129,6 @@ public class LamdaDemoTest {
         Human h2 = new Human();
         Human h3 = new Human();
         int maxAge = h1.getAge() - 100;
-        Assertions.assertTrue(LambdaDemo.areHumansYounger.test(h1, h2, h3, maxAge));
+        Assertions.assertFalse(LambdaDemo.areHumansYounger.test(h1, h2, h3, maxAge));
     }
 }

@@ -39,6 +39,7 @@ public class LambdaDemo {
         for (char elem : str.toCharArray()) {
             if (elem == ',') count++;
         }
+//        str.split(",")
         return count;
     };
     public static final Function<Human, Integer> getHumanAge = Human::getAge;
